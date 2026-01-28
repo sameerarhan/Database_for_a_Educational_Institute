@@ -80,3 +80,29 @@ Manage courses, subjects, batches, and instructors
 Enable revenue and performance analysis
 
 Prepare data for BI tools and dashboards
+
+## Tools & Technologies
+
+Database Tool: MySQL
+
+Design Tool: MySQL Workbench (EER Diagram)
+
+Version Control: Git & GitHub
+
+## Key Features
+
+Proper primary key and foreign key relationships
+
+Normalized schema
+
+Designed using real training institute workflows
+
+Ready for:
+
+Stored procedures
+
+Triggers
+
+Analytical queries
+
+Dashboards (Power BI / Excel / Tableau)
