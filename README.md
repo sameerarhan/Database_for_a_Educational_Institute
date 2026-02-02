@@ -8,26 +8,8 @@ Enquiry > Enrollment > Student > Course > Batch > Payment
 The database is built considering real-world operational and analytical requirements of an educational institute.
 
 ## EER Database Diagram
-<img width="1456" height="536" alt="EER Diagram" src="https://github.com/user-attachments/assets/e90ed7b8-b83d-4456-8b49-0c453c4db616" />
-**Database Design**
+<img width="1556" height="711" alt="Besant_Enrolment_v05_up" src="https://github.com/user-attachments/assets/86d28026-ce48-4ae4-89ce-8ace9bafc73c" />
 
-The database consists of multiple related tables representing:
-
-student_enquiry – captures initial student interest
-
-enrollments – stores enrolled students and enrollment details
-
-student – maintains student profile information
-
-course & course_sub – course and subject structure
-
-batch – batch scheduling and capacity management
-
-instructor – instructor details
-
-student_batch – mapping between students and batches
-
-payments – stores fee payment transactions
 
 ## Business Problem
 
@@ -51,6 +33,28 @@ How much revenue is generated per course?
 Which instructors handle the most students?
 
 This database model is designed to capture and analyze these aspects efficiently.
+
+# Database Design
+
+The database consists of multiple related tables representing:
+
+student_enquiry – captures initial student interest
+
+enrollments – stores enrolled students and enrollment details
+
+student – maintains student profile information
+
+course & course_sub – course and subject structure
+
+batch – batch scheduling and capacity management
+
+instructor – instructor details
+
+student_batch – mapping between students and batches
+
+payments – stores fee payment transactions
+
+
 
 ## Objectives
 
