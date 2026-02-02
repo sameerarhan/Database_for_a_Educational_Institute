@@ -1,61 +1,44 @@
 # Training Institute Database Project
+## Project Overview
+
+This project designs and implements a relational database for a training institute (e.g., Besant Technologies) to manage and analyze the complete student lifecycle:
+
+Enquiry > Enrollment > Student > Course > Batch > Payment
+
+The database is built considering real-world operational and analytical requirements of an educational institute.
 
 ## EER Database Diagram
-<img width="1456" height="536" alt="Medical_Store_DB_v011" src="https://github.com/user-attachments/assets/e90ed7b8-b83d-4456-8b49-0c453c4db616" />
-
-## Database Design
+<img width="1456" height="536" alt="EER Diagram" src="https://github.com/user-attachments/assets/e90ed7b8-b83d-4456-8b49-0c453c4db616" />
+**Database Design**
 
 The database consists of multiple related tables representing:
 
 student_enquiry – captures initial student interest
 
-enrollments – stores enrolled students
+enrollments – stores enrolled students and enrollment details
 
-student – maintains student profile
+student – maintains student profile information
 
 course & course_sub – course and subject structure
 
-batch – batch scheduling and capacity
+batch – batch scheduling and capacity management
 
 instructor – instructor details
 
-student_batch – student-to-batch mapping
+student_batch – mapping between students and batches
 
-## Features
-- Normalized schema
-- Foreign key relationships
-- Ready for analytics and dashboards
-
-## Project Overview
-
-This project designs and implements a relational database for a training institute (e.g., Besant Technologies) to manage and analyze the complete student lifecycle:
-
-Enquiry → Enrollment → Batch → Course → Payment
-
-The database is built considering real-world scenarios such as:
-
-Multiple courses and subjects
-
-Batch allocations
-
-Instructor assignments
-
-Student tracking
-
-Revenue and performance analysis
-
-The goal is to support both:
-
-Operational needs (storing student data)
-
-Analytical needs (dashboard and business insights)
+payments – stores fee payment transactions
 
 ## Business Problem
 
 Training institutes receive a large number of student enquiries through their website and offline channels.
-However, not all enquiries convert into enrollments, and not all enrolled students complete payment.
+However:
 
-The institute wants to answer questions such as:
+Not all enquiries convert into enrollments
+
+Not all enrolled students complete their payments
+
+The institute wants to answer key business questions such as:
 
 How many enquiries convert into enrollments?
 
@@ -81,28 +64,37 @@ Enable revenue and performance analysis
 
 Prepare data for BI tools and dashboards
 
-## Tools & Technologies
+## Features
 
-Database Tool: MySQL
-
-Design Tool: MySQL Workbench (EER Diagram)
-
-Version Control: Git & GitHub
-
-## Key Features
+Normalized relational schema
 
 Proper primary key and foreign key relationships
 
-Normalized schema
+Models real training institute workflows
 
-Designed using real training institute workflows
-
-Ready for:
-
-Stored procedures
+Stored Procedures to insert data with ACID properties and Transactional Control to maintain data consistency
 
 Triggers
 
 Analytical queries
 
-Dashboards (Power BI / Excel / Tableau)
+Dashboards
+
+## Tools & Technologies
+
+Database: MySQL
+
+Design Tool: MySQL Workbench (EER Diagram)
+
+Version Control: Git & GitHub
+
+## Future Enhancements
+
+
+Triggers for audit logging and automatic fee updates
+
+Analytical views
+
+Data ready for report generation
+
+Live Dashboards for KPIs and performance tracking using Power BI
