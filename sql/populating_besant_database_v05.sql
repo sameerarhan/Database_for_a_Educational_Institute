@@ -164,18 +164,18 @@ SELECT randbetween(20,70);
 -- =================================================================    SERIOUS   ==============================================================
 -- ============================================================          TABLES             =====================================================
 
--- - TABLE student_enquiry -
--- - TABLE enrollments -
--- - TABLE student -
--- - TABLE subject -
--- - TABLE course -
--- - TABLE coordinator -
--- - TABLE instructor -
--- - TABLE batch -
--- - TABLE payments -
--- TABLE course_sub 
--- - TABLE student_batch -
--- - TABLE enrolled_courses -
+-- - TABLE student_enquiry - (Fact)
+-- - TABLE enrollments - (Fact)
+-- - TABLE student - (Fact)
+-- - TABLE subject - (Dimension)
+-- - TABLE course - (Dimension)
+-- - TABLE coordinator - (Dimension)
+-- - TABLE instructor - (Dimension)
+-- - TABLE batch - (Fact)
+-- - TABLE payments - (Fact)
+-- - TABLE course_sub - Slowly Changing Dim
+-- - TABLE student_batch - (Fact)
+
 
 
 
@@ -192,7 +192,7 @@ INSERT INTO stored_proc_order_by_me.student_enquiry
 SELECT * FROM besant_database_v05.student_enquiry;
 
 ALTER TABLE student_enquiry
-MODIFY COLUMN status ENUM('NEW','INTERESTED','DEMO_SCHEDULED','LIKELY_TO_CONVERT','CONVERTED','ON_HOLD','LIKELY_LOST','LOST');
+MODIFY COLUMN status ENUM('INTERESTED','DEMO_SCHEDULED','LIKELY_TO_CONVERT','CONVERTED','ON_HOLD','LIKELY_LOST','LOST');
 
 DESC student_enquiry;
 ALTER TABLE student_enquiry    -- added an extra attribute "gender"
