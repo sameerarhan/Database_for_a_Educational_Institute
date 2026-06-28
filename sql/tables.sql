@@ -1,5 +1,6 @@
 -- Creating Required Tables
--- First Create Tables then Remove the Repetetive Data/Columns      i.e., Normalization
+-- Note : create the tables in the given order 
+-- First Create Tables then Remove the Repetetive Columns i.e., Normalization (optional)
 
 
 
